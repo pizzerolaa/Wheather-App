@@ -12,14 +12,14 @@ Use the Open Weather Map API to fetch the weather data
 To get started, create a new React project and install the Open Weather Map API dependency:
 
 ```javascript
-create-react-app my-weather-app
+npm create-react-app my-weather-app
 cd my-weather-app
 npm install openweathermap-api</code>
 ```
 
 Next, create a new Weather component and import the necessary dependencies:
 
-JavaScript
+```javascript
 import React, { useState, useEffect } from 'react';
 import { fetchWeather } from 'openweathermap-api';
 
@@ -50,10 +50,10 @@ const Weather = () => {
 };
 
 export default Weather;
-Usa el código con precaución. Más información
+```
 Finally, update your App component to render the Weather component:
 
-JavaScript
+```javascript
 import React from 'react';
 import Weather from './components/Weather';
 
@@ -66,18 +66,22 @@ const App = () => {
 };
 
 export default App;
+```
+
 Usa el código con precaución. Más información
-Usage
+### Usage
 
 To use the weather app, simply start the React development server:
-
+```javascript
 npm start
+```
+
 Then, open your web browser and go to http://localhost:3000. You should see a simple search bar where you can enter the name of a city. Once you enter a city name and press enter, the weather app will fetch the weather data and display it on the page.
 
-Deployment
+### Deployment
 
 Once you are happy with your weather app, you can deploy it to a production server using a service such as Netlify or Heroku.
 
-Contributions
+### Contributions
 
 This is an open source project, so feel free to contribute to it. If you have any suggestions or bug fixes, please create a pull request.
